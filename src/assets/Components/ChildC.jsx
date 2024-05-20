@@ -1,24 +1,15 @@
+import { useContext } from "react";
 import { data, data2 } from "../../App";
 
 let ChildC = () => {
+    let name=useContext(data)
+    let age=useContext(data2)
   return (
     <>
-      <data.Consumer>
-        {(name) => {
-          return (
-            // <h1>My Name Is {name}</h1>
-            <data2.Consumer>
-              {(age) => {
-                return (
-                  <h1>
-                    My Name Is {name} and my age is {age}
-                  </h1>
-                );
-              }}
-            </data2.Consumer>
-          );
-        }}
-      </data.Consumer>
+ 
+                
+        <h1>My Name Is {name} and my age is {age}</h1>
+    
     </>
   );
 };
