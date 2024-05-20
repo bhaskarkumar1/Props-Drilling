@@ -1,9 +1,10 @@
-import ChildC from "./ChildC"
+import 
+ChildC from "./ChildC"
 
-let ChildB=({name})=>{
+let ChildB=()=>{
     return(
         <>
-        <ChildC name={name}/>
+        <ChildC/>
         </>
     )
 }
